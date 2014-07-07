@@ -1,8 +1,10 @@
 > Broccoli wrapped [Colorguard](https://github.com/SlexAxton/css-colorguard) - Keep a watchful eye on your css colors
 
+### Warning
+
 As of the first iteration of this plugin, colorguard is run **once per file**, not as a sum total
-of all files. This is wrong, but it's a start. For now, you can pass it the 'tree' of your build
-directory.
+of all files. This is wrong, but it's a start. The best way to use this is after a concatenation
+step (or precompilation step that includes concatenation) in broccoli.
 
 ## Install
 
@@ -13,16 +15,22 @@ $ npm install --save broccoli-colorguard
 ## Usage
 
 ```js
+var compileSass = require('broccoli-sass');
 var colorguard = require('broccoli-colorguard');
 
-// Normally you would return the tree here, but colorguard returns warnings so you don't want that
-// This will simply throw errors that you'll get during a broccoli-serve to help you catch these
-// problems right away.
-colorguard(tree, {
+var cssTree = compileSass(inputTree, 'myapp/app.scss', 'assets/app.css', {
+  sassoptions: 'go here'
+});
+
+// Colorguard always returns exactly what you gave it. But it might throw errors before that
+// happens. In this case, it gets the full built output from sass so it knows how to parse it.
+cssTree = colorguard(cssTree, {
   threshold: 3,
   ignore: ['#555555'],
   whitelist: [['#000000', '#010101']]
 });
+
+module.exports = cssTree;
 ```
 
 ## API
