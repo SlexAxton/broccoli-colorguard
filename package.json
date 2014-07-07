@@ -1,6 +1,6 @@
 {
   "name": "broccoli-colorguard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Broccoli wrapped css-colorguard.",
   "license": "Apache 2.0",
   "repository": "slexaxton/broccoli-colorguard",

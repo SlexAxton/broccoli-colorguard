@@ -47,12 +47,9 @@ ColorguardFilter.prototype.processString = function (str) {
 
   if (output && output.collisions && output.collisions.length) {
     var errors = output.collisions.map(function(collision) {
-      return 'Collision: ' +
-        collision.colors[0].rgb + ' ' +
-        collision.colors[1].rgb +
-        ' (' + collision.distance + ')';
+      return 'Collision: ' + collision.message;
     });
-    throw new Error(errors.join('\n'));
+    throw new Error('\n' + errors.join('\n'));
   }
 
   // In case some one does chain
