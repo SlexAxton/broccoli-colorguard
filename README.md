@@ -38,7 +38,7 @@ These are blindly passed to colorguard. See options [there](https://github.com/S
 
 ## License
 
-MIT © [Alex Sexton](https://github.com/slexaxton)
+Apache 2
 
 ## Thanks
 

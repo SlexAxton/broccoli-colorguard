@@ -1,8 +1,8 @@
 {
   "name": "broccoli-colorguard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Broccoli wrapped css-colorguard.",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "repository": "slexaxton/broccoli-colorguard",
   "author": {
     "name": "Alex Sexton",
