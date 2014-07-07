@@ -1,5 +1,3 @@
-# broccoli-colorguard [![Build Status](https://travis-ci.org/SlexAxton/broccoli-colorguard.svg?branch=master)](https://travis-ci.org/SlexAxton/broccoli-colorguard.svg?branch=master)
-
 > Broccoli wrapped [Colorguard](https://github.com/SlexAxton/css-colorguard) - Keep a watchful eye on your css colors
 
 As of the first iteration of this plugin, colorguard is run **once per file**, not as a sum total
