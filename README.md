@@ -18,6 +18,8 @@ $ npm install --save broccoli-colorguard
 var compileSass = require('broccoli-sass');
 var colorguard = require('broccoli-colorguard');
 
+// This doesn't have to be sass. It could be broccoli-concat, or broccoli-uglify
+// or any other broccoli plugin that results in a single output file.
 var cssTree = compileSass(inputTree, 'myapp/app.scss', 'assets/app.css', {
   sassoptions: 'go here'
 });
