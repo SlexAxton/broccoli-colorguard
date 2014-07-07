@@ -1,0 +1,13 @@
+.classname {
+  background-color: white;
+  color: hsla(0,0,0,0.9);
+}
+
+.other {
+  color: #FFFFFF;
+  background-color: #010101;
+}
+
+.last {
+  color: #020202;
+}

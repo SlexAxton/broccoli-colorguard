@@ -1,0 +1,36 @@
+{
+  "name": "broccoli-colorguard",
+  "version": "0.1.0",
+  "description": "Broccoli wrapped css-colorguard.",
+  "license": "MIT",
+  "repository": "slexaxton/broccoli-colorguard",
+  "author": {
+    "name": "Alex Sexton",
+    "email": "alexsexton@gmail.com",
+    "url": "https://alexsexton.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "broccoli-plugin",
+    "compile",
+    "css",
+    "preprocess",
+    "preprocessor",
+    "rework",
+    "style",
+    "lint",
+    "stylesheet"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.1.6",
+    "colorguard": "^0.1.5"
+  },
+  "devDependencies": {
+    "broccoli": "^0.9.0"
+  }
+}
